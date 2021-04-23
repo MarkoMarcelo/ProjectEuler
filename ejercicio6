@@ -1,0 +1,19 @@
+#include <iostream>
+#define LIMIT 100
+
+using namespace std;
+
+int main(){
+  int i, sum = 0, exp = 0;
+  
+  for ( i = 1; i <= LIMIT; i++ )
+        {
+    sum += i * i;
+    exp += i;
+  }
+  
+  exp *= exp;
+  
+  cout<<"Resultado : "<<exp - sum<<endl;
+  return 0;
+}
